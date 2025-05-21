@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Assignment 1</title>
+  </head>
+
+  <body onload="main()">
+    <div style="padding-left: 150px;">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+    </div>
+
+
+    <div style="padding-left: 250px;">
+      <button type="button" id = "normalOn">Normal On</button>
+      <button type="button" id = "normalOff">Normal Off</button><p></p>
+
+      <button type="button" id = "lightOn">Light On</button>
+      <button type="button" id = "lightOff">Light Off</button><p></p>
+
+      Light X<input type="range" min="-250" max="250" value="0" class="slider" id="LightXSlide"><p></p>
+      Light Y<input type="range" min="-250" max="250" value="100" class="slider" id="LightYSlide"><p></p>
+      Light Z<input type="range" min="-250" max="250" value="-200" class="slider" id="LightZSlide"><p></p>
+      Light Color<input type="range" min="0" max="100" value="0" class="slider" id="LightColorSlide"><p></p>
+
+      Camera Angle<input type="range" min="-180" max="180" value="0" class="slider" id="angleSlide">
+      <p>
+      All Animation <button type="button" id = "allAnimationOn">ON</button>
+      <button type="button" id = "allAnimationOff">OFF</button>
+      <p>
+      Head<input type="range" min="-90" max="90" value="0" class="slider" id="headSlide">
+    </div>
+
+    <div style="width: 100%; display: table;">
+      <div style="display: table-row">
+          <div style="width: 500px; display: table-cell;">
+            <img src="robot_control_panel.png" alt="Graph Paper Drawing" style="float:right">
+            <br></br><br></br>
+            Right Shoulder<input type="range" min="-90" max="90" value="0" class="slider" id="rShouSlide">
+            <p>
+            Animation <button type="button" id = "rShouAnimationOn">ON</button>
+              <button type="button" id = "rShouAnimationOff">OFF</button>
+              <p>
+                Right Elbow<input type="range" min="-90" max="0" value="0" class="slider" id="rElbSlide">
+                <p>
+                  <br></br>
+                  <br></br>
+                  Right Leg<input type="range" min="-90" max="90" value="0" class="slider" id="rLegSlide">
+                  <p>
+                  Animation <button type="button" id = "rLegAnimationOn">ON</button>
+              <button type="button" id = "rLegAnimationOff">OFF</button>
+              <p>
+                Right Knee<input type="range" min="0" max="90" value="0" class="slider" id="rKneeSlide"></div>
+
+          <div style="display: table-cell;">
+            <br></br><br></br>Left Shoulder<input type="range" min="-90" max="90" value="0" class="slider" id="lShouSlide">
+            <p>Animation <button type="button" id = "lShouAnimationOn">ON</button>
+              <button type="button" id = "lShouAnimationOff">OFF</button></p>
+              <p>Left Elbow<input type="range" min="-90" max="0" value="0" class="slider" id="lElbSlide"></p>
+              <br></br><br></br>
+              Left Leg<input type="range" min="-90" max="90" value="0" class="slider" id="lLegSlide">
+              <p>Animation 
+                <button type="button" id = "lLegAnimationOn">ON</button>
+                <button type="button" id = "lLegAnimationOff">OFF</button></p>
+                Left Knee<input type="range" min="0" max="90" value="0" class="slider" id="lKneeSlide">
+          </div>
+      </div>
+  </div>
+
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix-cse160.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Shape.js"></script>
+    <script src="Sphere.js"></script>
+    <script src="Point.js"></script>
+    <script src="Camera.js"></script>
+    <!-- <script src="BlockyAnimal.js"></script> -->
+    <script src="World.js"></script>
+  </body>
+</html>
